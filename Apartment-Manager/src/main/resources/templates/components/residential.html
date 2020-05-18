@@ -1,0 +1,123 @@
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
+<div layout:fragment="content">
+
+    <!-- ------------------------------ Residential  Profile Form----------------------------- -->
+    <div class="row">
+        <div class="card" style="margin-left: 30px;">
+            <!-- --------------- card title form --------------->
+            <div class="card-header" style="border-radius: 6px;background: rgb(73, 76, 162);">
+                <div class="card-title">
+                    <h5 style="color: white"> Residential profile</h5>
+                </div>
+            </div>
+            <!-- ---------------   card body form --------------->
+            <div class="card-body">
+                <div style="margin-top: 15px;">
+                    <form>
+
+                        <div class="row">
+                            <!------------- ID Residential --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="idResidential" id="idResidential"
+                                       style="width:250px"/>
+                                <label for="idResidential">ID Residential</label>
+                            </div>
+
+                            <!------------- Fullname --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="fullname" id="fullname" style="width:400px"/>
+                                <label for="fullname">Fullname</label>
+                            </div>
+                        </div>
+                        <!------------------------------------ End row ----------------------->
+                        <div class="row">
+                            <!------------- Gender --------------->
+                            <div class="custom-control custom-radio custom-control-inline"
+                                 style="margin-left: 15px; margin-top: 15px;">
+                                <input type="radio" id="male" name="gender" class="custom-control-input">
+                                <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline"
+                                 style="margin-left:0px; margin-top: 15px;">
+                                <input type="radio" id="female" name="gender" class="custom-control-input">
+                                <label class="custom-control-label" for="female">Female</label>
+                            </div>
+
+                            <!------------- Birthday --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="birthday" id="birthday" style="width:100px">
+                                <label for="birthday">Birthday</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="number" required="" name="idcard" id="idcard" style="width:200px">
+                                <label for="idcard">ID Card</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" required="" name="nationality" id="nationality" style="width:155px">
+                                <label for="nationality">Nationality</label>
+                            </div>
+                        </div>
+                        <!------------------------------------ End row ----------------------->
+                        <div class="row">
+
+                            <!------------- ID Residential --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="adress" id="adress" style="width:400px"/>
+                                <label for="adress">Adress</label>
+                            </div>
+
+                            <!------------- Fullname --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="nation" id="nation" style="width:250px"/>
+                                <label for="nation">Nation</label>
+                            </div>
+                        </div>
+                        <!------------------------------------ End row ----------------------->
+                        <div class="row">
+
+                            <!------------- ID Residential --------------->
+                            <div class="input-container">
+                                <input type="number" required="" name="phone" id="phone" style="width:350px"/>
+                                <label for="phone">Phone nummber</label>
+                            </div>
+
+                            <!------------- Fullname --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="job" id="job" style="width:300px"/>
+                                <label for="job">Job</label>
+                            </div>
+                        </div>
+                        <!------------------------------------ End row ----------------------->
+                        <div class="row">
+
+                            <!------------- ID Residential --------------->
+                            <div class="input-container">
+                                <input type="email" required="" name="email" id="email" style="width:400px"/>
+                                <label for="email">Email</label>
+                            </div>
+
+                            <!------------- Fullname --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="idroom" id="idroom" style="width:250px"/>
+                                <label for="idroom">Email</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 300px; height: 300px; margin-left: 40px;">
+            <div class="card-img" style="border-radius: 50%">
+                <a>
+                    <img src="/assets/img/marc.jpg">
+                </a>
+            </div>
+            <div class="card-title-name">
+                <h5> Alec Thompson</h5>
+            </div>
+            <div class="card-body-information">
+            </div>
+        </div>
+    </div>
+
+</div>

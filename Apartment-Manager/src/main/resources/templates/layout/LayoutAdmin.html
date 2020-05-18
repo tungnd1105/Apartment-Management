@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+    <head th:replace="layout/Head.html"></head>
+    <body>
+        <div class="wrapper d-flex align-items-stretch">
+
+            <!------------------------- Sidenavbar ----------------->
+            <div th:replace="layout/SideNavbar.html"></div>
+
+            <!------------------------- Content ----------------->
+            <div  layout:fragment="content"></div>
+            
+        </div>
+    </body>
+</html>
