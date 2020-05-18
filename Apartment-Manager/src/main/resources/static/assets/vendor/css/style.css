@@ -8207,8 +8207,8 @@ h1, h2, h3, h4, h5,
   width: 100%; }
 
 #sidebar {
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 250px;
+  max-width: 250px;
   background: #494ca2;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -8220,7 +8220,7 @@ h1, h2, h3, h4, h5,
   #sidebar.active {
     margin-left: -270px; }
     #sidebar.active .custom-menu {
-      margin-right: -50px; }
+      margin-right: -70px; }
   #sidebar h1 {
     margin-bottom: 20px;
     font-weight: 700; }
