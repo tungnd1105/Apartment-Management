@@ -3,16 +3,17 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
     <head th:replace="layout/Head.html"></head>
-    <body>
-        <div class="wrapper d-flex align-items-stretch">
+    <body style="background-color: rgb(238,238,238)">
 
+        <!-------------------------------------------------------------------->
+        <div class="wrapper d-flex align-items-stretch">
             <!------------------------- Sidenavbar ----------------->
             <div th:replace="layout/SideNavbar.html"></div>
-
             <!------------------------- Content ----------------->
             <div id="content" class="p-4 p-md-5 pt-5" layout:fragment="content"></div>
-
         </div>
+        <!-------------------------------------------------------------------->
+
     </body>
     <script th:src="@{/assets/vendor/Js/main.js}" type="text/javascript"></script>
 </html>

@@ -8337,3 +8337,34 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #5356b1; }
+
+.align-left {
+  top: 10px;
+  position: fixed;
+  right: 300px;
+}
+.search-icon{
+  width: 35px;
+  height: 35px;
+  background-color: #005cbf;
+  text-align: center;
+  line-height: 35px !important;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s linear;
+  margin: 6px 0 0 3px;
+}
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}

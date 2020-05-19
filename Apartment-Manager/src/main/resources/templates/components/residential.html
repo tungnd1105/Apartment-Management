@@ -1,5 +1,12 @@
-<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
 <div layout:fragment="content">
+
+    <!-------------------- Header--------------->
+    <div class="row">
+        <a class="title"> Employee Profile</a>
+        <div th:replace="layout/Header"></div>
+    </div>
 
     <!-- ------------------------------ Residential  Profile Form----------------------------- -->
     <div class="row">
