@@ -1,0 +1,33 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
+<div layout:fragment="content">
+
+    <!-------------------- Header--------------->
+    <div class="row">
+        <a class="title"> Building Table</a>
+        <div th:replace="layout/Header"></div>
+    </div>
+    <!-------------------------------------- Table Residential ----------------------------->
+    <div class="card" style="width: 100%; margin-left: -3px">
+        <!-------------------------- card title table --------------->
+        <div class="card-header" style="border-radius: 6px;background: rgb(73, 76, 162);">
+            <div class="card-title">
+                <h5 style="color: white"> Building Table</h5>
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <div class="card-body">
+            <!--------------------------card-body-table---------------->
+            <table class="table table-hover" id="tableBuilding">
+                <thead>
+                <tr>
+                    <th>
+                        ID Building
+                    </th>
+                </tr>
+                </thead>
+            </table>
+            <!------------------------------------------------------>
+        </div>
+    </div>
+</div>
