@@ -28,4 +28,9 @@ public class ViewController {
     public String pagetablebuilding() {
         return "components/TableBuilding";
     }
+    // return template page table building
+    @GetMapping("/tableroom")
+    public String pagetableroom() {
+        return "components/TableRoom";
+    }
 }
