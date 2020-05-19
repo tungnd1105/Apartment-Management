@@ -13,5 +13,8 @@ public class ViewController {
     public String pageresidential() {
         return "components/Residential";
     }
-
+    @GetMapping("/listResidential")
+    public String pagelistresidential() {
+        return "components/ListResidential";
+    }
 }
