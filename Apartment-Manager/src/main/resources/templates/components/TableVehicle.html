@@ -4,43 +4,43 @@
 
     <!-------------------- Header--------------->
     <div class="row">
-        <a class="title"> Quản Lý Hóa Đơn </a>
+        <a class="title">Quản  Lý Xe Gửi </a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Table Invoice----------------------------->
+    <!-------------------------------------- Danh sách Xe gửi----------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
         <!-------------------------- card title table --------------->
         <div class="card-header" style="border-radius: 6px;background: rgb(73, 76, 162);">
             <div class="card-title">
-                <h5 style="color: white"> Hóa Đơn theo tháng </h5>
+                <h5 style="color: white"> Danh sách Xe Gửi </h5>
             </div>
         </div>
         <!------------------------------------------------------------->
         <div class="card-body">
             <!--------------------------card-body-table---------------->
-            <table class="table table-hover" id="tableinvoice">
+            <table class="table table-hover" id="tablevehicle">
                 <thead>
                 <tr>
                     <th>
-                        ID Invoice
+                        ID Building
                     </th>
                 </tr>
                 </thead>
             </table>
             <!------------------------------------------------------>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
-                <i class="icon-btn fa fa-plus"></i> Tạo hóa đơn mới
+            <button  type="button" class=" btn btn-primary" data-toggle="modal" data-target="#form-building">
+                <i class="icon-btn fa fa-plus"></i> Đăng ký xe gửi mới
             </button>
         </div>
     </div>
-    <!---------------------------------------- Form modal building ---------------------------------->
+    <!---------------------------------------- Form modal Thông tin xe ---------------------------------->
     <div class="modal fade" id="form-building" tabindex="-1"
          role="dialog" aria-labelledby="form-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!------------------- Header-modal -------------->
                 <div class="modal-header">
-                    <h5 class="modal-title" id="form-label">Hóa đơn </h5>
+                    <h5 class="modal-title" id="form-label">Thông tin xe gửi</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -50,52 +50,47 @@
                     <form>
 
                         <div class="row">
-                            <!------------- ID Invoice--------------->
+                            <!------------- Biển số Xe------------->
                             <div class="input-container">
-                                <input type="text" required="" name="idhoadon" id="idhoadon"
+                                <input type="text" required="" name="biensoxe" id="biensoxe"
+                                       style="width:230px"/>
+                                <label for="biensoxe">Biển Số Xe </label>
+                            </div>
+                            <!------------- Tên xe --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="tenxe" id="tenxe"
                                        style="width:220px"/>
-                                <label for="idhoadon">ID Hóa Đơn</label>
-                            </div>
-                            <!------------- ID Room --------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="idphong" id="idphong"
-                                       style="width:225px"/>
-                                <label for="idphong">ID Phòng</label>
+                                <label for="tenxe">Tên Xe</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->
                         <div class="row">
-                            <!------------- tên hoa dơnd --------------->
+                            <!------------- Loại Xe --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="tenhoadon" id="tenhoadon"
-                                       style="width:200px">
-                                <label for="tenhoadon">Tên Hóa Đơn</label>
+                                <input type="text" required="" name="loaixe" id="loaixe"
+                                       style="width:230px">
+                                <label for="loaixe">Loại Xe</label>
                             </div>
-                            <!------------- Money Total --------------->
+                            <!------------- Mau xe --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="tongsotien" id="tongsotien"
-                                       style="width:245px">
-                                <label for="tongsotien">Tổng Số Tiền</label>
+                                <input type="text" required="" name="mauxe" id="mauxe"
+                                       style="width:220px">
+                                <label for="mauxe">Màu Xe</label>
                             </div>
                         </div>
-
                         <!------------------------------------ End row ----------------------->
                         <div class="row">
-                            <!------------- Money Received --------------->
+                            <!------------- Ngay dang ky --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="stdanhan" id="stdanhan" style="width:150px">
-                                <label for="stdanhan"> Số Tiền Đã Nhận</label>
+                                <input type="text" required="" name="ngaydangkygui" id="ngaydangkygui"
+                                       style="width:230px">
+                                <label for="ngaydangkygui">Ngày Đăng Ký <Gửi></Gửi></label>
                             </div>
-                            <!------------- Arrears --------------->
+                            <!------------- id cu dan --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="stconthieu" id="stconthieu" style="width:150px">
-                                <label for="stconthieu">Số Tiền Còn Thiếu </label>
-                            </div>
-                            <!-------------Money Debt --------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="nokytruoc" id="nokytruoc"
-                                       style="width:140px">
-                                <label for="nokytruoc">Dư Nợ Kỳ Trước</label>
+                                <input type="text" required="" name="idcudan" id="idcudan"
+                                       style="width:220px">
+                                <label for="idcudan">ID Cư Dân</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->

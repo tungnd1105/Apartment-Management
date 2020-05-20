@@ -43,4 +43,9 @@ public class ViewController {
     public String pagetableinvoicedetail() {
         return "components/TableInvoiceDetial";
     }
+    // return template page table Invoice detail
+    @GetMapping("/tablevehicle")
+    public String pagetablevehicle() {
+        return "components/TableVehicle";
+    }
 }

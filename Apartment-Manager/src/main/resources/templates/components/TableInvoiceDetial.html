@@ -4,15 +4,15 @@
 
     <!-------------------- Header--------------->
     <div class="row">
-        <a class="title"> Invoice Table</a>
+        <a class="title"> Quản Lý Hóa Đơn Chi Tiết </a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Table Invoice----------------------------->
+    <!-------------------------------------- Table Invoice Detial----------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
         <!-------------------------- card title table --------------->
         <div class="card-header" style="border-radius: 6px;background: rgb(73, 76, 162);">
             <div class="card-title">
-                <h5 style="color: white"> Invoice Table</h5>
+                <h5 style="color: white"> Hóa đơn chi tiết </h5>
             </div>
         </div>
         <!------------------------------------------------------------->
@@ -29,18 +29,18 @@
             </table>
             <!------------------------------------------------------>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
-                <i class="icon-btn fa fa-plus"></i> Create Invoice
+                <i class="icon-btn fa fa-plus"></i> Thêm khoản phí mới
             </button>
         </div>
     </div>
-    <!---------------------------------------- Form modal building ---------------------------------->
+    <!---------------------------------------- Form modal Invoice Detail ---------------------------------->
     <div class="modal fade" id="form-building" tabindex="-1"
          role="dialog" aria-labelledby="form-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!------------------- Header-modal -------------->
                 <div class="modal-header">
-                    <h5 class="modal-title" id="form-label">Invoice Month</h5>
+                    <h5 class="modal-title" id="form-label">Hóa Đơn Chi Tiết</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -52,30 +52,30 @@
                         <div class="row">
                             <!------------- ID Invoice--------------->
                             <div class="input-container">
-                                <input type="text" required="" name="idinvoice" id="idinvoice"
+                                <input type="text" required="" name="idhoadon" id="idhoadon"
                                        style="width:220px"/>
-                                <label for="idinvoice">ID Invoice</label>
+                                <label for="idhoadon">ID Hóa Đơn</label>
                             </div>
                             <!------------- Name Price --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="nameprice" id="nameprice"
+                                <input type="text" required="" name="loaiphi" id="loaiphi"
                                        style="width:225px"/>
-                                <label for="nameprice">Name Price</label>
+                                <label for="loaiphi">Loại Phí</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->
                         <div class="row">
                             <!------------- Unit--------------->
                             <div class="input-container">
-                                <input type="text" required="" name="unit" id="unit"
+                                <input type="text" required="" name="donvitinh" id="donvitinh"
                                        style="width:200px">
-                                <label for="unit">Unit</label>
+                                <label for="donvitinh">Đơn Vị tính </label>
                             </div>
                             <!------------- Price --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="price" id="price"
+                                <input type="text" required="" name="dongia" id="dongia"
                                        style="width:245px">
-                                <label for="price">Price</label>
+                                <label for="dongia">Đơn Giá</label>
                             </div>
                         </div>
 
@@ -83,13 +83,13 @@
                         <div class="row">
                             <!------------- Money Total --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="moneytotal" id="moneytotal" style="width:150px">
-                                <label for="moneytotal">Money Total</label>
+                                <input type="text" required="" name="tongsotien" id="tongsotien" style="width:200px">
+                                <label for="tongsotien">Tổng Số Tiền </label>
                             </div>
                             <!------------- ID Table Price --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="idtableprice" id="idtableprice" style="width:150px">
-                                <label for="idtableprice">ID Table Price</label>
+                                <input type="text" required="" name="idbanggia" id="idbanggia" style="width:245px">
+                                <label for="idbanggia">ID Bảng Giá</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->
@@ -97,9 +97,9 @@
                 </div>
                 <!------------------ footer-modal ----------------->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success"><i class="icon-btn fa fa-plus"></i> Create Invoice
+                    <button type="button" class="btn btn-success"><i class="icon-btn fa fa-plus"></i> Tạo Mới
                     </button>
-                    <button type="button" class="btn btn-primary"><i class=" icon-btn fa fa-refresh"></i>Update Invoice
+                    <button type="button" class="btn btn-primary"><i class=" icon-btn fa fa-refresh"></i>Cập Nhật
                     </button>
                 </div>
                 <!------------------------------------------->
