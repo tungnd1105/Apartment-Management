@@ -4,15 +4,15 @@
 
     <!-------------------- Header--------------->
     <div class="row">
-        <a class="title"> Building Table</a>
+        <a class="title"> Invoice Table</a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Table Room ----------------------------->
+    <!-------------------------------------- Table Invoice----------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
         <!-------------------------- card title table --------------->
         <div class="card-header" style="border-radius: 6px;background: rgb(73, 76, 162);">
             <div class="card-title">
-                <h5 style="color: white"> Building Table</h5>
+                <h5 style="color: white"> Invoice Table</h5>
             </div>
         </div>
         <!------------------------------------------------------------->
@@ -22,14 +22,14 @@
                 <thead>
                 <tr>
                     <th>
-                        ID Building
+                        ID Invoice
                     </th>
                 </tr>
                 </thead>
             </table>
             <!------------------------------------------------------>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
-                Create Building
+                Create Invoice
             </button>
         </div>
     </div>
@@ -40,7 +40,7 @@
             <div class="modal-content">
                 <!------------------- Header-modal -------------->
                 <div class="modal-header">
-                    <h5 class="modal-title" id="form-label">Building Information</h5>
+                    <h5 class="modal-title" id="form-label">Invoice Month</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -50,37 +50,52 @@
                     <form>
 
                         <div class="row">
-                            <!------------- ID Room--------------->
+                            <!------------- ID Invoice--------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="idinvoice" id="idinvoice"
+                                       style="width:220px"/>
+                                <label for="idinvoice">ID Invoice</label>
+                            </div>
+                            <!------------- ID Room --------------->
                             <div class="input-container">
                                 <input type="text" required="" name="idroom" id="idroom"
-                                       style="width:230px"/>
+                                       style="width:225px"/>
                                 <label for="idroom">ID Room</label>
-                            </div>
-                            <!------------- ID Residential --------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="idresidential" id="idresidential"
-                                       style="width:220px"/>
-                                <label for="idresidential">ID Residential</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->
                         <div class="row">
-                            <!------------- Location --------------->
+                            <!------------- Name Price --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="Location" id="location"
-                                       style="width:140px">
-                                <label for="location">Localtion</label>
+                                <input type="text" required="" name="nameprice" id="nameprice"
+                                       style="width:200px">
+                                <label for="nameprice">Name Price</label>
                             </div>
-                            <!------------- Residential Total --------------->
+                            <!------------- Money Total --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="Location" id="residentialtotal"
-                                       style="width:140px">
-                                <label for="residentialtotal">Residential Total</label>
+                                <input type="text" required="" name="moneytotal" id="moneytotal"
+                                       style="width:245px">
+                                <label for="moneytotal">Money Total</label>
                             </div>
-                            <!------------- ID Building --------------->
+                        </div>
+
+                        <!------------------------------------ End row ----------------------->
+                        <div class="row">
+                            <!------------- Money Received --------------->
                             <div class="input-container">
-                                <input type="number" required="" name="idbuilding" id="idbuilding" style="width:155px">
-                                <label for="idbuilding">ID Building</label>
+                                <input type="text" required="" name="idbuilding" id="moneyreceived" style="width:150px">
+                                <label for="moneyreceived">Money Received</label>
+                            </div>
+                            <!------------- Arrears --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="arrears" id="arrears" style="width:150px">
+                                <label for="arrears">Arrears</label>
+                            </div>
+                            <!-------------Money Debt --------------->
+                            <div class="input-container">
+                                <input type="text" required="" name="moneydebt" id="moneydebt"
+                                       style="width:140px">
+                                <label for="moneydebt">Money Debt</label>
                             </div>
                         </div>
                         <!------------------------------------ End row ----------------------->
@@ -88,9 +103,9 @@
                 </div>
                 <!------------------ footer-modal ----------------->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success"><i class="icon-btn fa fa-plus"></i> Create Building
+                    <button type="button" class="btn btn-success"><i class="icon-btn fa fa-plus"></i> Create Invoice
                     </button>
-                    <button type="button" class="btn btn-primary"><i class=" icon-btn fa fa-refresh"></i>Update Building
+                    <button type="button" class="btn btn-primary"><i class=" icon-btn fa fa-refresh"></i>Update Invoice
                     </button>
                 </div>
                 <!------------------------------------------->

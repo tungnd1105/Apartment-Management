@@ -33,4 +33,9 @@ public class ViewController {
     public String pagetableroom() {
         return "components/TableRoom";
     }
+    // return template page table Invoice
+    @GetMapping("/tableinvoice")
+    public String pagetableinvoice() {
+        return "components/TableInvoice";
+    }
 }
