@@ -8341,7 +8341,7 @@ a[data-toggle="collapse"] {
 .align-left {
   top: 10px;
   position: absolute;
-  right: 80px;
+  right:130px;
 }
 .search-icon{
   width: 35px;
@@ -8356,23 +8356,11 @@ a[data-toggle="collapse"] {
   transition: 0.3s linear;
   margin: 6px 0 0 3px;
 }
-.ripple {
-  background-position: center;
-  transition: background 0.8s;
-}
-.ripple:hover {
-  background: rgb(73,76,162) radial-gradient(circle, transparent 1%, rgb(73,76,162) 1%) center/15000%;
-}
-.ripple:active {
-  background-color: rgba(73, 76, 162, 0.4);
-  background-size: 100%;
-  transition: background 0s;
-}
 
 .icon-left{
   position: relative;
-  right: -33px;
-  top: 10px;
+  right: -45px;
+  top: 15px;
   font-size: 18px;
   color: rgb(73,76,162);
 }

@@ -14,38 +14,38 @@ public class ViewController {
     // return template page residential
     @GetMapping("/residential")
     public String pageresidential() {
-        return "components/Residential";
+        return "components/quanly/Residential";
     }
 
     // return template page table residential
     @GetMapping("/listResidential")
     public String pagebuildingresidential() {
-        return "components/TableResidential";
+        return "components/quanly/TableResidential";
     }
 
     // return template page table building
     @GetMapping("/tablebuilding")
     public String pagetablebuilding() {
-        return "components/TableBuilding";
+        return "components/quanly/TableBuilding";
     }
     // return template page table building
     @GetMapping("/tableroom")
     public String pagetableroom() {
-        return "components/TableRoom";
+        return "components/quanly/TableRoom";
     }
     // return template page table Invoice
     @GetMapping("/tableinvoice")
     public String pagetableinvoice() {
-        return "components/TableInvoice";
+        return "components/quanly/TableInvoice";
     }
     // return template page table Invoice detail
     @GetMapping("/tableinvoicedetail")
     public String pagetableinvoicedetail() {
-        return "components/TableInvoiceDetial";
+        return "components/quanly/TableInvoiceDetial";
     }
     // return template page table Invoice detail
     @GetMapping("/tablevehicle")
     public String pagetablevehicle() {
-        return "components/TableVehicle";
+        return "components/quanly/TableVehicle";
     }
 }
