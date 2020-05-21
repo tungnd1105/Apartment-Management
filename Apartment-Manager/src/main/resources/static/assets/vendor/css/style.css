@@ -8208,8 +8208,8 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background-color: #310e68;
-  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    background-color: #306844;
+    background-image: linear-gradient(314deg, #306844 0%, #2c4c3b 74%);
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8271,11 +8271,11 @@ h1, h2, h3, h4, h5,
       height: 40px;
       border-radius: 50%; }
       #sidebar .custom-menu .btn.btn-primary {
-        background: #393c7f;
-        border-color: #393c7f; }
+        background-color: rgb(44,76,59);
+        border-color: rgb(44,76,59); }
         #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
-          background: #393c7f !important;
-          border-color: #393c7f !important; }
+          background: rgb(44,76,59) !important;
+          border-color:rgb(44,76,59)!important; }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -8343,13 +8343,16 @@ a[data-toggle="collapse"] {
   position: absolute;
   right:130px;
 }
+.search-icon:hover{
+  background-color: white;
+}
 .search-icon{
   width: 35px;
   height: 35px;
-  background-color: #005cbf;
+  background-color: #dee2e6;
   text-align: center;
   line-height: 35px !important;
-  color: white;
+  color: #007bff;
   font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
