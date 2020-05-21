@@ -15,7 +15,8 @@
     padding: 10px;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
     0 7px 10px -5px rgba(73, 76, 162, 0.4);
-    background: rgb(73, 76, 162);
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
 }
 
 .card-titles {
