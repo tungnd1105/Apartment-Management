@@ -10,7 +10,11 @@
             <!------------------------- Sidenavbar ----------------->
             <div th:replace="layout/SideNavbar.html"></div>
             <!------------------------- Content ----------------->
-            <div id="content" class="p-4 p-md-5 pt-5" layout:fragment="content"></div>
+            <div id="content" class="p-4 p-md-5 pt-5" layout:fragment="content">
+                <div th:replace="components/quanly/Dashboard.html">
+
+                </div>
+            </div>
         </div>
         <!-------------------------------------------------------------------->
 
