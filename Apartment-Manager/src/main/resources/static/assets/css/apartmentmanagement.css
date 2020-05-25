@@ -108,6 +108,7 @@
     font-weight: 300;
     padding: .625rem 0;
     margin-left: 3rem;
+    text-transform: uppercase;
 }
 .dropdown-menu.dropdown-menu-right.show {
     margin-top: 20px;

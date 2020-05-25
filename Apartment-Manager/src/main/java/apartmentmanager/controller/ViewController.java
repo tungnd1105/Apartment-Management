@@ -23,4 +23,8 @@ public class ViewController {
         return "components/quanly/TableCudan";
     }
 
+    @GetMapping("/canho")
+    public String pageCanho() {
+        return "components/quanly/canho";
+    }
 }
