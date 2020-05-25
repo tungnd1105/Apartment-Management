@@ -98,7 +98,9 @@
     padding: 15px 0 0 15px;
     line-height: 30px;
 }
-
+.card-body{
+    margin: 0 10px 0 10px ;
+}
 .title {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin-top: -30px;
