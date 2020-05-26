@@ -4,7 +4,7 @@
 
     <!-------------------- Header--------------->
     <div class="row">
-        <a class="title"> Quản Lý Cư Dân</a>
+        <a class="title"> Quản lý chủ các căn hộ </a>
         <div th:replace="layout/Header"></div>
     </div>
 
@@ -14,7 +14,7 @@
             <!-- --------------- card title form --------------->
             <div class="card-header" style="border-radius: 6px">
                 <div class="card-titles">
-                    <h6 style="color: white"> Thông tin cư dân</h6>
+                    <h6 style="color: white"> Thông tin chủ căn hộ </h6>
                 </div>
             </div>
             <!-- ---------------   card body form --------------->
@@ -49,7 +49,7 @@
                         <div class="row">
                             <!------------- CMND --------------->
                             <div class="input-container">
-                                <input type="text"  required="" name="cmnd" id="cmnd" style="width:150px">
+                                <input type="text"required="" name="cmnd" id="cmnd" style="width:150px">
                                 <label for="cmnd">CMND</label>
                             </div>
                             <!------------- quốc tịch-------------->
@@ -84,15 +84,10 @@
 
                             <!------------- Email --------------->
                             <div class="input-container">
-                                <input type="email" required="" name="email" id="email" style="width:400px"/>
+                                <input type="email" required="" name="email" id="email" style="width:635px"/>
                                 <label for="email">Email</label>
                             </div>
 
-                            <!------------- ID phong --------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="idphong" id="idphong" style="width:220px"/>
-                                <label for="idphong">ID Phòng </label>
-                            </div>
                         </div>
                     </form>
                 </div>

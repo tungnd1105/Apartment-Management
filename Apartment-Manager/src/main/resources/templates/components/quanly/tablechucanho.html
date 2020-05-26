@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
+<div layout:fragment="content">
+
+    <!-------------------- Header--------------->
+    <div class="row">
+        <a class="title"> Quản Lý chủ căn hộ </a>
+        <div th:replace="layout/Header"></div>
+    </div>
+    <!-------------------------------------- Danh sách cư dân ----------------------------->
+    <div class="card" style="width: 100%; margin-left: -3px">
+        <!-------------------------- card title table --------------->
+        <div class="card-header" style="border-radius: 6px;">
+            <div class="card-titles">
+                <h6 style="color: white"> Danh sách chủ căn hộ </h6>
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <div class="card-body">
+            <!--------------------------card-body-table---------------->
+            <table class="table table-hover" id="tableResidential">
+                <thead>
+                <tr>
+                    <th>
+                    </th>
+                </tr>
+                </thead>
+            </table>
+            <!------------------------------------------------------>
+        </div>
+    </div>
+</div>

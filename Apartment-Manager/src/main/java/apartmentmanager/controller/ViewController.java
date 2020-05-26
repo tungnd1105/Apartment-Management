@@ -11,6 +11,21 @@ public class ViewController {
         return "layout/LayoutAdmin";
     }
 
+    // return template page can ho
+    @GetMapping("/canho")
+    public String pageCanho() {
+        return "components/quanly/canho";
+    }
+    // return template page  chu can ho
+    @GetMapping("/chucanho")
+    public String pageChuCanho() {
+        return "components/quanly/chucanho";
+    }
+    // return template page   table chu can ho
+    @GetMapping("/tablechucanho")
+    public String pageTabelChuCanho() {
+        return "components/quanly/tablechucanho";
+    }
     // return template page residential
     @GetMapping("/cudan")
     public String pageCudan() {
@@ -21,10 +36,5 @@ public class ViewController {
     @GetMapping("/tablecudan")
     public String pageTableCudan() {
         return "components/quanly/TableCudan";
-    }
-
-    @GetMapping("/canho")
-    public String pageCanho() {
-        return "components/quanly/canho";
     }
 }
