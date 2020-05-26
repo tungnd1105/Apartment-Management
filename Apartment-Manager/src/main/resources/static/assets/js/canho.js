@@ -1,3 +1,3 @@
 $(document).ready( function () {
-    $('#table-cudan').DataTable();
+    $('#table-canho').DataTable();
 } );
