@@ -37,4 +37,9 @@ public class ViewController {
     public String pageTableCudan() {
         return "components/quanly/TableCudan";
     }
+    // return template page table residential
+    @GetMapping("/tablehoadon")
+    public String pageTableHoadon() {
+        return "components/quanly/TableHoadon";
+    }
 }

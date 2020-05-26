@@ -115,3 +115,6 @@
 .dropdown-menu.dropdown-menu-right.show {
     margin-top: 20px;
 }
+.modal-title{
+    text-transform: uppercase;
+}
