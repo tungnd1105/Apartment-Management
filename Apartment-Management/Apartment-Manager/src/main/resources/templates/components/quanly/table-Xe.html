@@ -4,21 +4,21 @@
 
     <!-------------------- Header--------------->
     <div class="row">
-        <a class="title"> Quản Lý căn hộ</a>
+        <a class="title"> Quản Lý Xe</a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Danh sách Căn hộ ----------------------------->
+    <!-------------------------------------- Danh sách xe----------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
         <!-------------------------- card title table --------------->
         <div class="card-header" style="border-radius: 6px;">
             <div class="card-titles">
-                <h6 style="color: white"> Danh sách căn hộ</h6>
+                <h6 style="color: white"> Danh sách Xe của cư dân </h6>
             </div>
         </div>
         <!------------------------------------------------------------->
         <div class="card-body">
             <!--------------------------card-body-table---------------->
-            <table class="table table-hover" id="table-canho">
+            <table class="table table-hover" id="table-xe">
                 <thead>
                 <tr>
                     <th>
@@ -29,18 +29,18 @@
             </table>
             <!------------------------------------------------------>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
-                <i class="icon-btn fa fa-plus"></i> Thêm căn hộ
+                <i class="icon-btn fa fa-plus"></i> Đăng ký xe gửi
             </button>
         </div>
     </div>
-    <!---------------------------------------- Form modal can ho ---------------------------------->
+    <!---------------------------------------- Form modal Xe ---------------------------------->
     <div class="modal fade" id="form-building" tabindex="-1"
          role="dialog" aria-labelledby="form-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!------------------- Header-modal -------------->
                 <div class="modal-header">
-                    <h5 class="modal-title" id="form-label">Thông Tin Căn Hộ </h5>
+                    <h5 class="modal-title" id="form-label">Thông Tin Xe của cư dân </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -52,40 +52,32 @@
                         <div class="row">
                             <!------------- ID Can ho --------------->
                             <div class="input-container">
-                                <input type="text" required="" name="idtoanha" id="idtoanha"
-                                       style="width:230px"/>
-                                <label for="idtoanha">ID Căn Hộ </label>
+                                <input type="text" required="" name="idtoanha" id="loaixe" style="width:230px"/>
+                                <label for="loaixe">Loại Xe </label>
                             </div>
 
                             <!------------- Diện Tích --------------->
                             <div class="input-container">
-                                <input type="number" required="" name="dientich" id="dientich"
-                                       style="width:220px"/>
-                                <label for="dientich">Diện Tích (m2)</label>
+                                <input type="text" required="" name="biensoxe" id="biensoxe" style="width:220px"/>
+                                <label for="biensoxe">Biển Số Xe</label>
                             </div>
-                        </div>
-                        <!------------------------------------ End row ----------------------->
-                        <div class="row">
-                            <!------------- Vị trí  --------------->
+                            <!----------------- MAU XE --------------->
                             <div class="input-container">
-                                <input type="text" required="" min="0" name="vitri" id="vitri"
-                                       style="width:100px">
-                                <label for="vitri"> Vị Trí</label>
+                                <input type="text" required="" name="mau" id="mau"
+                                       style="width:170px"/>
+                                <label for="mau">Mau</label>
                             </div>
-                            <!------------- Số phòng trong một tầng --------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="password" id="password" style="width:200px">
-                                <label for="password">Password</label>
-                            </div>
-                            <!------------- Tổng Số phòng --------------->
+                            <!------------------- id cư dan ------------>
                             <div>
-                                <select style="width: 140px;margin: 2px 0 0 10px;padding-bottom: 12px;" class="input-select">
-                                    <option selected> ID Chủ Hộ</option>
+                                <select style="width: 285px;margin: 2px 0 0 10px;padding-bottom: 12px;"
+                                        class="input-select">
+                                    <option selected> ID Cư Dân</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+                            <!---------------------------------------->
                         </div>
                         <!------------------------------------ End row ----------------------->
                     </form>
@@ -97,7 +89,7 @@
                     <button type="button" class="btn btn-primary"><i class=" icon-btn fas fa-sync-alt"></i>Cập Nhật
                     </button>
                 </div>
-                <!------------------------------------------->
+                <!------------------------------------------------->
             </div>
         </div>
     </div>

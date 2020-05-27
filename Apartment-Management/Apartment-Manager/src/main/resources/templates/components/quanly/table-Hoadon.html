@@ -1,23 +1,21 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/LayoutAdmin">
 <div layout:fragment="content">
-
-    <!-------------------- Header--------------->
+    <!------------------------------------------------- Header------------------------------------->
     <div class="row">
         <a class="title"> Quản Lý Hóa Đơn</a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Danh sách hóa đơn----------------------------->
+    <!----------------------------------------------- Table hóa đơn---------------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
-        <!-------------------------- card title table --------------->
+        <!------------------------------------------ card title table -------------------------------->
         <div class="card-header" style="border-radius: 6px;">
             <div class="card-titles">
                 <h6 style="color: white"> Danh sách hóa đơn</h6>
             </div>
         </div>
-        <!------------------------------------------------------------->
+        <!-------------------------------------------- card-body-table ------------------------------->
         <div class="card-body">
-            <!--------------------------card-body-table---------------->
             <table class="table table-hover" id="table-hoadon">
                 <thead>
                 <tr>
@@ -27,113 +25,113 @@
                 </tr>
                 </thead>
             </table>
-            <!------------------------------------------------------>
-            <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
-                <i class="icon-btn fa fa-plus"></i> Thêm Hóa Đơn
+            <!--------------------------------- Button open modal form hoa don -------------------------->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#form-building">
+                <i class="icon-btn fa fa-plus"></i> Lên Hóa Đơn
             </button>
         </div>
     </div>
-    <!---------------------------------------- Form modal Hóa đơn---------------------------------->
+    <!--------------------------------------------- Form modal Hóa đơn---------------------------------->
     <div class="modal fade" id="form-building" tabindex="-1"
          role="dialog" aria-labelledby="form-label" aria-hidden="true">
         <div class=" modal-lg modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <!------------------- Header-modal -------------->
+                <!------------------------------------- Header-modal ----------------------------------->
                 <div class="modal-header">
                     <h5 class="modal-title" id="form-label">Thông tin hóa đơn </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <!------------------- body-modal ---------------->
+                <!--------------------------------------- body-modal ------------------------------------->
                 <div class="modal-body">
                     <form>
 
                         <div class="row">
-                            <!------------- Số điện mới --------------->
+                            <!---------------------------- Số điện mới ------------------------------------>
                             <div class="input-container">
                                 <input type="number" min="0" required="" name="sodienmoi" id="sodienmoi"
                                        style="width:180px"/>
                                 <label for="sodienmoi">Số Điện Mới </label>
                             </div>
 
-                            <!------------- sô điện cũ  --------------->
+                            <!------------------------------ Số điện cũ  ---------------------------------->
                             <div class="input-container">
                                 <input type="number" min="0" required="" name="sodien" id="sodien"
                                        style="width:180px"/>
                                 <label for="sodien">Số Điện Cũ </label>
                             </div>
-                            <!------------- số  nước mới --------------->
+                            <!----------------------------- Số nước mới ----------------------------->
                             <div class="input-container">
                                 <input type="number" min="0" required="" name="sonuocmoi" id="sonuocmoi"
                                        style="width:180px"/>
-                                <label for="sonuocmoi">Số  Nước Mới  </label>
+                                <label for="sonuocmoi">Số Nước Mới </label>
                             </div>
-                            <!------------- số  nước mới --------------->
+                            <!----------------------------- Số  nước cũ ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="sonuoc" id="sonuoc"
-                                       style="width:180px"/>
-                                <label for="sonuoc">Số  Nước Cũ  </label>
+                                <input type="number" min="0" required="" name="sonuoc" id="sonuoc" style="width:180px"/>
+                                <label for="sonuoc">Số Nước Cũ </label>
                             </div>
                         </div>
-                        <!------------------------------------ End row ----------------------->
+                        <!---------------------------------------- End row ---------------------------------->
                         <div class="row">
-                            <!------------- oto --------------->
+                            <!-------------------------------------- Xe oto --------------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required=""         name="xeoto" id="xeoto"
-                                       style="width:120px">
+                                <input type="number" min="0" required="" name="xeoto" id="xeoto" style="width:120px">
                                 <label for="xeoto"> Xe Ô Tô</label>
                             </div>
-                            <!------------- xe tay ga  --------------->
+                            <!----------------------------------- Xe tay ga  ------------------------------>
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xetayga" id="xetayga" style="width:120px">
+                                <input type="number" min="0" required="" name="xetayga" id="xetayga"
+                                       style="width:120px">
                                 <label for="xetayga">Xe Tay Ga </label>
                             </div>
-                            <!------------- xe may thuong   --------------->
+                            <!----------------------------------- Xe may thuong   ------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xemaythuong" id="xemaythuong" style="width:110px">
-                                <label for="xemaythuong">Xe Số  </label>
+                                <input type="number" min="0" required="" name="xemaythuong" id="xemaythuong"
+                                       style="width:110px">
+                                <label for="xemaythuong">Xe Số </label>
                             </div>
-                            <!------------- xe mo to  --------------->
+                            <!-------------------------------------- Xe mo to  ---------------------------->
                             <div class="input-container">
                                 <input type="number" min="0" required="" name="xemoto" id="xemoto" style="width:110px">
                                 <label for="xemoto">Xe Mô Tô </label>
                             </div>
-                            <!------------- Xe dap dien --------------->
+                            <!------------------------------------ Xe dap dien ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xedapdien" id="xedapdien" style="width:110px">
-                                <label for="xedapdien">Xe Đạp Điện  </label>
+                                <input type="number" min="0" required="" name="xedapdien" id="xedapdien"
+                                       style="width:110px">
+                                <label for="xedapdien">Xe Đạp Điện </label>
                             </div>
-                            <!------------- Xe dap  --------------->
+                            <!-------------------------------------- Xe dap  ----------------------------->
                             <div class="input-container">
                                 <input type="number" min="0" required="" name="xedap" id="xedap" style="width:120px">
-                                <label for="xedap">Xe Đạp  </label>
+                                <label for="xedap">Xe Đạp </label>
                             </div>
                         </div>
                         <div class="row">
-                            <!------------- Ngay  --------------->
+                            <!------------------------------------------ Ngay  -------------------------------->
                             <div class="input-container">
-                                <input type="text" required="" name="sodienmoi" id="ngay"
-                                       style="width:180px"/>
-                                <label for="sodienmoi">Ngày </label>
+                                <input type="text" required="" name="ngay" id="ngay" style="width:180px"/>
+                                <label for="ngay">Ngày </label>
                             </div>
 
-                            <!------------- ID can ho   --------------->
+                            <!----------------------------------------- ID can ho   -------------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="idcanho" id="idcanho"
                                        style="width:180px"/>
                                 <label for="idcanho">ID Căn Hộ </label>
                             </div>
-                            <!------------- id nhan vien  --------------->
+                            <!--------------------------------------- id nhan vien  ---------------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="idnv" id="idnv"
                                        style="width:180px"/>
-                                <label for="idnv"> ID Nhân Viên  </label>
+                                <label for="idnv"> ID Nhân Viên </label>
                             </div>
-                            <div  style="margin: 20px 0 0 28px;" class="form-check">
+                            <div style="margin: 20px 0 0 28px;" class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                   Đã Thanh Toán
+                                    Đã Thanh Toán
                                 </label>
                             </div>
                         </div>

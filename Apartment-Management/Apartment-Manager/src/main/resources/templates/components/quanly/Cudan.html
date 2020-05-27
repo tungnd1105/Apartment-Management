@@ -1,39 +1,37 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
 <div layout:fragment="content">
-
-    <!-------------------- Header--------------->
+    <!---------------------------------------------- Header------------------------------------>
     <div class="row">
         <a class="title"> Quản Lý Cư Dân</a>
         <div th:replace="layout/Header"></div>
     </div>
-
-    <!-- ------------------------------ Residential  Profile Form----------------------------- -->
+    <!-- ------------------------------------------ Form cu dan ------------------------------ -->
     <div class="row">
         <div class="card" style="margin: 50px 0 0 10px;">
-            <!-- --------------- card title form --------------->
+            <!-- --------------------------------- card title form ------------------------------>
             <div class="card-header" style="border-radius: 6px">
                 <div class="card-titles">
                     <h6 style="color: white"> Thông tin cư dân</h6>
                 </div>
             </div>
-            <!-- ---------------   card body form --------------->
+            <!-- ---------------------------------- card body form ---------------------------->
             <div class="card-body">
                 <div>
                     <form>
 
                         <div class="row">
-                            <!------------- ho tên--------------->
+                            <!------------------------- Họ Tên ------------------------------>
                             <div class="input-container">
                                 <input type="text" required="" name="hoten" id="hoten" style="width:300px"/>
                                 <label for="hoten">Họ Tên</label>
                             </div>
-                            <!------------- ngày sinh --------------->
+                            <!------------------------ Ngày Sinh ---------------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="ngaysinh" id="ngaysinh" style="width:185px">
                                 <label for="ngaysinh">Ngày Sinh</label>
                             </div>
-                            <!------------- gioi tinh--------------->
+                            <!------------------------- Giới tính --------------------------->
                             <div class="custom-control custom-radio custom-control-inline"
                                  style="margin-left: 15px; margin-top: 15px;">
                                 <input type="radio" id="nam" name="gioitinh" class="custom-control-input">
@@ -45,53 +43,52 @@
                                 <label class="custom-control-label" for="nu">Nữ</label>
                             </div>
                         </div>
-                        <!------------------------------------ End row ----------------------->
+                        <!------------------ End row ---------->
                         <div class="row">
-                            <!------------- CMND --------------->
+                            <!---------------------------- CMND ------------------------------>
                             <div class="input-container">
-                                <input type="text"  required="" name="cmnd" id="cmnd" style="width:150px">
+                                <input type="text" required="" name="cmnd" id="cmnd" style="width:150px">
                                 <label for="cmnd">CMND</label>
                             </div>
-                            <!------------- quốc tịch-------------->
+                            <!--------------------------- Quốc Tịch -------------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="quoctich" id="quoctich" style="width:150px">
                                 <label for="quoctich">Quốc Tịch</label>
                             </div>
 
-                            <!------------- Quê quán  --------------->
+                            <!--------------------------- Quê Quán  -------------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="quequan" id="quequan" style="width:305px"/>
                                 <label for="quequan">Quê Quán</label>
                             </div>
                         </div>
-                        <!------------------------------------ End row ----------------------->
+                        <!---------------- End row ------------>
                         <div class="row">
 
-                            <!------------- Phone number --------------->
+                            <!-------------------------- Điện Thoại ------------------------>
                             <div class="input-container">
-                                <input type="text"  required="" name="dienthoai" id="dienthoai" style="width:300px"/>
+                                <input type="text" required="" name="dienthoai" id="dienthoai" style="width:300px"/>
                                 <label for="dienthoai">Điện Thoại</label>
                             </div>
-
-                            <!------------- Job --------------->
+                            <!-------------------------- Nghề Nghiệp ----------------------->
                             <div class="input-container">
                                 <input type="text" required="" name="nghenghiep" id="nghenghiep" style="width:320px"/>
                                 <label for="nghenghiep">Nghề Nghiệp</label>
                             </div>
                         </div>
-                        <!------------------------------------ End row ----------------------->
+                        <!----------------- End row ---------->
                         <div class="row">
 
-                            <!------------- Email --------------->
+                            <!---------------------------- Email --------------------------->
                             <div class="input-container">
                                 <input type="email" required="" name="email" id="email" style="width:400px"/>
                                 <label for="email">Email</label>
                             </div>
-
-                            <!------------- ID phong --------------->
+                            <!--------------------------- ID phong ------------------------->
                             <div>
-                                <select style="width: 220px;margin: 2px 0 0 10px;padding-bottom: 12px;" class="input-select">
-                                    <option selected> ID Căn Hộ  </option>
+                                <select style="width: 220px;margin: 2px 0 0 10px;padding-bottom: 12px;"
+                                        class="input-select">
+                                    <option selected> ID Căn Hộ</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -99,8 +96,9 @@
                             </div>
                         </div>
                     </form>
+                    <!--------------------------------------- End Form --------------------------------->
                 </div>
-                <!-------------------- button----------------->
+                <!--------------------- button----------------->
                 <div style="margin-left: 400px">
                     <button class="btn btn-primary"><i class="icon-btn fa fa-plus"></i> Tạo Mới</button>
                     <button class="btn btn-success"><i class=" icon-btn fas fa-sync-alt"></i>Cập Nhật</button>
@@ -108,7 +106,7 @@
                 <!-------------------------------------------->
             </div>
         </div>
-        <!------------------------------------- card image ----------------------------------->
+        <!--------------------------------------------------- Hinh Ảnh ------------------------>
         <div class="card" style="width: 270px; height: 353px; margin:50px 0 0  50px;">
             <!--------------------------- image --------------->
             <div class="card-img" style="border-radius: 50%">
@@ -123,7 +121,6 @@
             <div class="card-body-information">
             </div>
         </div>
-        <!--------------------------------------------------------------->
     </div>
-
 </div>
+<!------------------------------------------------------ End Div content --------------------------------------------->

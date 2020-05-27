@@ -2,22 +2,21 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/LayoutAdmin">
 <div layout:fragment="content">
 
-    <!-------------------- Header--------------->
+    <!-------------------------------------------------- Header----------------------------------------------->
     <div class="row">
         <a class="title"> Quản Lý Cư Dân</a>
         <div th:replace="layout/Header"></div>
     </div>
-    <!-------------------------------------- Danh sách cư dân ----------------------------->
+    <!------------------------------------------------- table Cư Dân ---------------------------------------->
     <div class="card" style="width: 100%; margin-left: -3px">
-        <!-------------------------- card title table --------------->
+        <!-------------------------------------------- card title table ------------------------------------->
         <div class="card-header" style="border-radius: 6px;">
             <div class="card-titles">
                 <h6 style="color: white"> Danh sách cư dân</h6>
             </div>
         </div>
-        <!------------------------------------------------------------->
+        <!--------------------------------------------- card-body-table --------------------------------------->
         <div class="card-body">
-            <!--------------------------card-body-table---------------->
             <table class="table table-hover" id="table-cudan">
                 <thead>
                 <tr>
@@ -27,7 +26,7 @@
                 </tr>
                 </thead>
             </table>
-            <!------------------------------------------------------>
         </div>
     </div>
 </div>
+<!------------------------------------------------------- end div content --------------------------------------------->
