@@ -2727,6 +2727,11 @@ textarea.form-control {
 
 
 
+a.btn.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
+}
+
 
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
@@ -10929,7 +10934,7 @@ h1, h2, h3, h4, h5,
     }
 }
 
-#sidebar .custom-menu .btn-toggle {
+#sidebar .custom-menu .btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -10941,8 +10946,8 @@ h1, h2, h3, h4, h5,
 }
 
 #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
-    background-color:#59287a !important;
-    border-color: #59287a !important;
+    background: #59287a !important;
+    border-color:#59287a !important;
 }
 
 a[data-toggle="collapse"] {
@@ -10973,8 +10978,6 @@ a[data-toggle="collapse"] {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
-
 
 .footer p {
     color: rgba(255, 255, 255, 0.5);
@@ -11097,7 +11100,7 @@ p {
 }
 
 .modal-header {
-    background-color:#59287a;
+    background: #59287a;
 }
 
 .modal-title {
