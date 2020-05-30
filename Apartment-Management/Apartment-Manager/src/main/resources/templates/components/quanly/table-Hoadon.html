@@ -48,87 +48,90 @@
                         <div class="row">
                             <!---------------------------- Số điện mới ------------------------------------>
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="sodienmoi" id="sodienmoi"
+                                <input type="number" min="0" required="" name="electricityNew" id="electricityNew"
                                        style="width:180px"/>
-                                <label for="sodienmoi">Số Điện Mới </label>
+                                <label for="electricityNew">Số Điện Mới </label>
                             </div>
 
                             <!------------------------------ Số điện cũ  ---------------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="sodien" id="sodien"
+                                <input type="number" min="0" required="" name="electricityNumber" id="electricityNumber"
                                        style="width:180px"/>
-                                <label for="sodien">Số Điện Cũ </label>
+                                <label for="electricityNumber">Số Điện Cũ </label>
                             </div>
                             <!----------------------------- Số nước mới ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="sonuocmoi" id="sonuocmoi"
-                                       style="width:180px"/>
-                                <label for="sonuocmoi">Số Nước Mới </label>
+                                <input type="number" min="0" required="" name="waterNew" id="waterNew" style="width:180px"/>
+                                <label for="waterNew">Số Nước Mới </label>
                             </div>
                             <!----------------------------- Số  nước cũ ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="sonuoc" id="sonuoc" style="width:180px"/>
-                                <label for="sonuoc">Số Nước Cũ </label>
+                                <input type="number" min="0" required="" name="waterNumber" id="waterNumber" style="width:180px"/>
+                                <label for="waterNumber">Số Nước Cũ </label>
                             </div>
                         </div>
                         <!---------------------------------------- End row ---------------------------------->
                         <div class="row">
                             <!-------------------------------------- Xe oto --------------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xeoto" id="xeoto" style="width:120px">
-                                <label for="xeoto"> Xe Ô Tô</label>
+                                <input type="number" min="0" required="" name="car" id="car" style="width:120px">
+                                <label for="car"> Xe Ô Tô</label>
                             </div>
                             <!----------------------------------- Xe tay ga  ------------------------------>
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xetayga" id="xetayga"
-                                       style="width:120px">
-                                <label for="xetayga">Xe Tay Ga </label>
+                                <input type="number" min="0" required="" name="scooter" id="scooter" style="width:120px">
+                                <label for="scooter">Xe Tay Ga </label>
                             </div>
                             <!----------------------------------- Xe may thuong   ------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xemaythuong" id="xemaythuong"
-                                       style="width:110px">
-                                <label for="xemaythuong">Xe Số </label>
+                                <input type="number" min="0" required="" name="bicycle" id="bicycle" style="width:110px">
+                                <label for="bicycle">Xe Số </label>
                             </div>
                             <!-------------------------------------- Xe mo to  ---------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xemoto" id="xemoto" style="width:110px">
-                                <label for="xemoto">Xe Mô Tô </label>
+                                <input type="number" min="0" required="" name="motorcycle" id="motorcycle" style="width:110px">
+                                <label for="motorcycle">Xe Mô Tô </label>
                             </div>
                             <!------------------------------------ Xe dap dien ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xedapdien" id="xedapdien"
-                                       style="width:110px">
-                                <label for="xedapdien">Xe Đạp Điện </label>
+                                <input type="number" min="0" required="" name="electricBicycle" id="electricBicycle" style="width:110px">
+                                <label for="electricBicycle">Xe Đạp Điện </label>
                             </div>
                             <!-------------------------------------- Xe dap  ----------------------------->
                             <div class="input-container">
-                                <input type="number" min="0" required="" name="xedap" id="xedap" style="width:120px">
-                                <label for="xedap">Xe Đạp </label>
+                                <input type="number" min="0" required="" name="bike" id="bike" style="width:120px">
+                                <label for="bike">Xe Đạp </label>
                             </div>
                         </div>
                         <div class="row">
                             <!------------------------------------------ Ngay  -------------------------------->
                             <div class="input-container">
-                                <input type="text" required="" name="ngay" id="ngay" style="width:180px"/>
-                                <label for="ngay">Ngày </label>
+                                <input type="text" required="" name="date" id="date" style="width:180px"/>
+                                <label for="date">Ngày </label>
                             </div>
 
                             <!----------------------------------------- ID can ho   -------------------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="idcanho" id="idcanho"
-                                       style="width:180px"/>
-                                <label for="idcanho">ID Căn Hộ </label>
+                            <div>
+                                <select style="width: 180px;margin: 2px 0 0 10px;padding-bottom: 12px;" class="input-select">
+                                    <option selected> ID Căn Hộ </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                             <!--------------------------------------- id nhan vien  ---------------------------->
-                            <div class="input-container">
-                                <input type="text" required="" name="idnv" id="idnv"
-                                       style="width:180px"/>
-                                <label for="idnv"> ID Nhân Viên </label>
+                            <div>
+                                <select style="width: 180px;margin: 2px 0 0 10px;padding-bottom: 12px;"
+                                        class="input-select">
+                                    <option selected> ID Nhân Viên</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                             <div style="margin: 20px 0 0 28px;" class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" id="paid">
+                                <label class="form-check-label" for="paid">
                                     Đã Thanh Toán
                                 </label>
                             </div>
