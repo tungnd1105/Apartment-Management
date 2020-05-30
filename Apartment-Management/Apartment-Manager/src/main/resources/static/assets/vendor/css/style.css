@@ -73,18 +73,6 @@ a:hover, a:focus {
     box-shadow: none;
 }
 
-button {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-
-button:hover, button:focus {
-    text-decoration: none !important;
-    outline: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -397,11 +385,11 @@ i.material-icons:hover {
 
 .modal-header i.material-icons:hover:after {
     transform: scale(1);
-    box-shadow:none;
+    box-shadow: none;
 }
 
 .modal-header i.material-icons:nth-of-type(1) {
-    background:none;
+    background: none;
 }
 
 .modal-header i.material-icons:nth-of-type(1):hover {
@@ -409,7 +397,7 @@ i.material-icons:hover {
 }
 
 .modal-header i.material-icons:nth-of-type(1):after {
-    border:none;
+    border: none;
 }
 
 .modal-header i.material-icons:hover {
@@ -418,6 +406,7 @@ i.material-icons:hover {
     cursor: pointer;
     box-shadow: none;
 }
+
 p {
     color: #999;
     font-weight: 300;
@@ -438,7 +427,6 @@ p {
         margin: 10px;
         font-size: 20px;
     }
-
     i.material-icons:after {
         border-width: 3px;
         top: 0;
